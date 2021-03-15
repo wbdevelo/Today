@@ -1,0 +1,14 @@
+PL/SQL (Procedural Language extension to SQL)
+	- SQL을 확장한 절차적 언어(Procedural Language)이다.
+	- 관계형 데이터베이스에서 사용되는 Oracle의 표준 데이터 엑세스 언어로, 프로시저 생성자를 SQL과 완벽하게 통합한다.
+
+
+SQL - JOIN
+	- 둘 이상의 테이블을 연결해서 데이터를 검색하는 방법.
+	- 연결하려면 테이블들이 적어도 하나의 컬럼을 공유하고 있어야 한다.
+1. INNER JOIN : 교집합
+	SELECT <select list> FROM <table A> JOIN <table B> ON 조건
+2. LEFT JOIN : 부분집합
+	SELECT <select list> FROM <table A> LEFT JOIN <table B> ON 조건
+3. RIGHT JOIN : 부분집합
+	SELECT <select list> FROM <table A> LEFT JOIN <table B> ON 조건
