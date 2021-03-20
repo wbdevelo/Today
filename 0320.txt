@@ -1,0 +1,5 @@
+※ Python 내장함수 ※
+
+input() : 데이터 입력받을 때
+input.split() : 데이터를 공백으로 구분하여 입력
+list.sort(reverse = True) : 리스트를 내림차순으로 정렬
