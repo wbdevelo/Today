@@ -6,6 +6,7 @@ for i in range(1, 10):
 
     
     
+    
 #2. A+B-3(10950)
 count = int(input())
 ans = []
@@ -15,3 +16,15 @@ for i in range(count):
 
 for data in ans:
     print(data)
+
+    
+    
+    
+
+#3. 
+last = int(input())
+sum = 0
+for i in range(1, last+1):
+    sum += i
+
+print(sum)
