@@ -28,3 +28,12 @@ for i in range(1, last+1):
     sum += i
 
 print(sum)
+
+
+
+
+
+#4. N찍기(2741)
+num = int(input())
+for i in range(1, num+1):
+    print(i)
