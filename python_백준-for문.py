@@ -37,3 +37,10 @@ print(sum)
 num = int(input())
 for i in range(1, num+1):
     print(i)
+
+    
+    
+    
+    
+#5. 기찍N(2742)
+print(*range(int(input()),0, -1))
