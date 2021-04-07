@@ -21,7 +21,7 @@ for data in ans:
     
     
 
-#3. 
+#3. 합(8393)
 last = int(input())
 sum = 0
 for i in range(1, last+1):
@@ -44,3 +44,14 @@ for i in range(1, num+1):
     
 #5. 기찍N(2742)
 print(*range(int(input()),0, -1))
+
+
+
+
+
+#6. A+B-7(11021)
+import sys
+
+num = int(input())
+for i in range(1, num+1):
+    print("Case #%d: %d" %(i, sum(map(int, sys.stdin.readline().split()))))
