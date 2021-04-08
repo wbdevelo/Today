@@ -33,7 +33,19 @@ print(sum)
 
 
 
-#4. N찍기(2741)
+#4. 빠른 A+B(15552)
+import sys
+
+count = int(input())
+for i in range(count):
+    a, b = map(int, sys.stdin.readline().split())
+    print(a+b)
+
+
+
+
+
+#5. N찍기(2741)
 num = int(input())
 for i in range(1, num+1):
     print(i)
@@ -42,14 +54,14 @@ for i in range(1, num+1):
     
     
     
-#5. 기찍N(2742)
+#6. 기찍N(2742)
 print(*range(int(input()),0, -1))
 
 
 
 
 
-#6. A+B-7(11021)
+#7. A+B-7(11021)
 import sys
 
 num = int(input())
