@@ -79,3 +79,12 @@ num = int(input())
 for i in range(num):
     a, b = map(int, sys.stdin.readline().split())
     print("Case #%d: %d + %d = %d" %(i+1, a, b, a+b))
+
+    
+    
+    
+    
+#9. 별찍기-1(2438)
+count = int(input())
+for i in range(count): 
+    print("*"*(i+1))
