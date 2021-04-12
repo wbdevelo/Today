@@ -88,3 +88,13 @@ for i in range(num):
 count = int(input())
 for i in range(count): 
     print("*"*(i+1))
+
+    
+    
+    
+    
+#10. 별찍기-2(2439)
+count = int(input())
+for i in range(count):
+    space = count-i-1
+    print(" "*space + "*"*(i+1))
