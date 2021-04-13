@@ -98,3 +98,15 @@ count = int(input())
 for i in range(count):
     space = count-i-1
     print(" "*space + "*"*(i+1))
+    
+    
+    
+    
+    
+#11. X보다 작은 수(10871)
+n, x = map(int, input().split())
+num = list(map(int, input().split()))
+
+for data in num:
+    if data < x:
+        print(data, end=" ")
