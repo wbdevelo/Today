@@ -4,3 +4,21 @@ if a == b:
     print("==")
 else:
     print(">") if a>b else print("<")
+
+
+
+
+
+#2. 시험 성적(9498)
+sc = int(input())
+if sc in range(90, 101):
+    print("A")
+elif sc in range(80, 90):
+    print("B")
+elif sc in range(70, 80):
+    print("C")
+elif sc in range(60, 70):
+    print("D")
+else:
+    print("F")
+    
