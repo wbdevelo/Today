@@ -22,3 +22,10 @@ elif sc in range(60, 70):
 else:
     print("F")
     
+
+
+
+
+#3. 윤년(2753)
+year = int(input())
+print("1" if (year%4==0)and((year%100!=0)or(year%400==0)) else "0")
