@@ -29,3 +29,13 @@ else:
 #3. 윤년(2753)
 year = int(input())
 print("1" if (year%4==0)and((year%100!=0)or(year%400==0)) else "0")
+
+
+
+
+
+#4. 사분면 고르기(14681)
+x = int(input())
+y = int(input())
+
+print(( (1) if (y>0) else (4) ) if (x>0) else ( (2) if (y>0) else (3) ))
