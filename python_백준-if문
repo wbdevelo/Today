@@ -39,3 +39,20 @@ x = int(input())
 y = int(input())
 
 print(( (1) if (y>0) else (4) ) if (x>0) else ( (2) if (y>0) else (3) ))
+
+
+
+
+
+# 알람 시계(2884)
+h, m = map(int, input().split())
+
+if m > 44:
+    print(h, m-45)
+else:
+    m = m+15
+    
+    if h > 0:
+        print(h-1, m)
+    else:
+        print(23, m)
