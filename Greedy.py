@@ -49,3 +49,23 @@ for i in range(p):
         sum+= time[j]
 
 print(sum)
+
+
+
+
+
+#4. 백준-주유소(13305)
+city = int(input())
+road = list(map(int, input().split()))
+cost = list(map(int, input().split()))
+
+total = 0
+m = cost[0]
+
+for i in range(city-1):
+    if(cost[i] < m):
+        m = cost[i]
+
+    total += road[i]*m
+
+print(total)
