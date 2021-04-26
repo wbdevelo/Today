@@ -36,6 +36,10 @@ print(sum)
 
 
 
+#
+
+
+
 #3. 백준-ATM(11399)
 p = int(input())
 time = list(map(int, input().split()))
@@ -69,3 +73,25 @@ for i in range(city-1):
     total += road[i]*m
 
 print(total)
+
+
+
+
+
+#5. 백준-회의실 배정(1931)
+num = int(input())
+time = [[0]*2 for i in range(num)]
+
+for i in range(num):
+    time[i][0], time[i][1] = map(int, input().split())
+
+time.sort(key=lambda x: (x[1], x[0]))
+
+cnt = 1
+end = time[0][1]
+for i in range(1, num):
+    if time[i][0] >= end:
+        cnt += 1
+        end = time[i][1]
+
+print(cnt)
