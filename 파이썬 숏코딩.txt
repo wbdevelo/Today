@@ -8,3 +8,10 @@ def get_grade(score):
 	return "FFFFFFDCBAA"[score//10]
 
 get_grade(91)
+
+딕셔너리를 활용하여 룩업 테이블을 사전에 만들어 두는 경우.
+     딕셔너리 생성 방법들
+	1. dict1 = dict(zip['one', 'two', 'three'], [1, 2, 3])
+	2. dict2 = dict([('one', 1), ('two', 2), ('three', 3)])
+	3. dict3 = dict(one=1, two=2, three=3)
+	4. dict4 = {'one':1, 'two':2, 'three':3}
