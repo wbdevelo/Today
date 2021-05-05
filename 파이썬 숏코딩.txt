@@ -52,3 +52,29 @@ def my_sort(x):
 Blackpink.sort(key=my_sort)
 
 Blackpink.sort(key=lambda x:x[1])
+
+
+
+
+
+**********최대한 공식을 활용**********
+반복문 > comprehension > 공식 순으로 훨 씬 더 짧게 코드를 작성할 수 있다.
+
+1. for문
+def my_sum(num):
+	ans = 0
+	for i in range(1, num+1):
+		ans += i
+	return ans
+
+2. iterable
+def my_sum(num):
+	return sum(range(1, num+1))
+	
+3. comprehension
+def my_sum(num):
+	return sum([i for i in range(1, num+1)])
+
+4. 곧식 활용
+def my_sum(num):
+	return num*(num+1)//2
