@@ -78,3 +78,12 @@ def my_sum(num):
 4. 곧식 활용
 def my_sum(num):
 	return num*(num+1)//2
+
+
+
+
+**********shot circuit 활용**********
+논리 연산을 할 때 파이썬은 A and B 에서 A가 거짓인 경우 B는 아예 실행도 되지 않습니다.
+이 점을 활용하면 더 빨리 연산을 끝낼 수 있습니다.
+ex)
+print(check_id("admin") and check_password("admin", "1234"))
