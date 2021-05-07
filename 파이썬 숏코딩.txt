@@ -34,6 +34,20 @@ expression
 	**print()안에 generator가 오면 바로 결과를 볼 수 없어서 *을 사용하여 unpack
 
 
+2. if문
+statement
+	def check(num):
+	     if num%2: return 'NO'
+	     else: return 'YES'
+	print(check(4))
+conditional expression
+	def check(num):
+	     return 'NO' if num%2 else 'YES'
+	
+	def check(num):
+	     return num%2 and 'NO' or 'YES'
+	print(check(4))
+
 
 3. 함수
 def function -> lambda function
