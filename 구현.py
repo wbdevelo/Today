@@ -19,3 +19,26 @@ for i in range(len(state)):
             count += 1
 
 print(count)
+
+
+
+
+
+#2. 왕실의 나이트
+data = input()
+start = [ord(data[0])-96, int(data[1])]
+moves = [
+        (2, 1), (-2, 1), (2, -1), (-2, -1),
+        (1, 2), (-1, 2), (1, -2), (-1, -2)
+        ]
+count = 0
+
+for move in moves:
+    nx = start[0] + move[0]
+    ny = start[1] + move[1]
+
+    if nx<1 or nx>8 or ny<1 or ny>8:
+        continue
+    count += 1
+
+print(count)
