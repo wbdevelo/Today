@@ -38,3 +38,18 @@ for data in datas:
 for i in range(len(count)):
     for j in range(count[i]):
         print(i, end=" ")
+
+        
+        
+        
+        
+#1. 위에서 아래로
+datas = []
+for i in range(4):
+    datas.append(int(input()))
+
+datas = sorted(datas, reverse=True)
+
+for data in datas:
+    print(data, end=" ")
+    
