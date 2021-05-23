@@ -57,6 +57,20 @@ for data in datas:
     
     
     
+#2. 성적이 낮은 순서로 학생 출력하기
+num = int(input())
+datas = []
+for i in range(num):
+    datas.append(input().split())
+
+datas = sorted(datas, key=lambda array: array[1])
+for data in datas:
+    print(data, end=" ") 
+
+    
+    
+    
+    
 #3. 두 배열의 원소 교체
 n, k = map(int, input().split())
 a = list(map(int, input().split()))
