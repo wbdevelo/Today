@@ -68,3 +68,29 @@ for target in targets:
         print("no", end=' ')
     else:
         print("yes", end=' ')
+
+        
+        
+        
+        
+# 떡볶이 떡 찾기
+n, target = list(map(int, input().split()))
+array = list(map(int, input().split()))
+
+def make(array, target, start, end):
+    while start <= end:
+        mid = (start + end) // 2
+        sum = 0
+        for rice in array:
+            if rice >= mid:
+                sum += rice - mid
+        if sum == target:
+            return mid
+        elif sum > target:
+            return make(array, target, mid+1, end)
+        else:
+            return make(array, target, start, mid-1)
+            
+
+
+print(make(array, target, min(array), max(array)))
