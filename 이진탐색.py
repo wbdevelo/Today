@@ -73,6 +73,29 @@ for target in targets:
         
         
         
+        
+# 부품찾기_계수정렬1
+n = int(input())
+array = list(map(int, input().split()))
+m = int(input())
+targets = list(map(int, input().split()))
+
+countArray = [0]*(max(array)+1)
+for target in targets:
+    for data in array:
+        if target == data:
+            countArray[target] += 1
+
+for target in targets:
+    if countArray[target] == 0:
+        print("no", end=" ")
+    else:
+        print("yes", end=" ")
+
+        
+        
+        
+        
 # 떡볶이 떡 찾기
 n, target = list(map(int, input().split()))
 array = list(map(int, input().split()))
