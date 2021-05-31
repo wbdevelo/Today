@@ -95,6 +95,26 @@ for target in targets:
         
         
         
+# 부품찾기_계수정렬2
+n = int(input())
+array = [0]*1000000
+
+for i in input().split():
+    array[int(i)] += 1
+
+m = int(input())
+targets = list(map(int, input().split()))
+
+for target in targets:
+    if array[target] == 0:
+        print("no", end=" ")
+    else:
+        print("yes", end=" ")
+
+        
+        
+        
+        
         
 # 떡볶이 떡 찾기
 n, target = list(map(int, input().split()))
@@ -117,3 +137,6 @@ def make(array, target, start, end):
 
 
 print(make(array, target, min(array), max(array)))
+
+
+
